@@ -1,5 +1,0 @@
-com\github\jobservice\workers\starter\factory\StarterWorkerFactory.class
-com\github\jobservice\workers\starter\StarterBulkWorker.class
-com\github\jobservice\workers\starter\factory\StarterWorkerConfiguration.class
-com\github\jobservice\workers\starter\factory\StarterWorkerFactoryProvider.class
-com\github\jobservice\workers\starter\StarterWorker.class
