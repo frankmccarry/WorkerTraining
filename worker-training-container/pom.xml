@@ -265,6 +265,7 @@
                                     </inline>
                                 </assembly>
                                 <env>
+                                    <CAF_WORKER_JAVA_OPTS>-agentlib:jdwp=transport=dt_socket,address=*:5001,server=y,suspend=n</CAF_WORKER_JAVA_OPTS>
                                     <CAF_WORKER_INPUT_QUEUE>worker-starter-in</CAF_WORKER_INPUT_QUEUE>
                                     <CAF_WORKER_OUTPUT_QUEUE>worker-starter-out</CAF_WORKER_OUTPUT_QUEUE>
                                     <CAF_WORKER_FAILURE_QUEUE>worker-starter-err</CAF_WORKER_FAILURE_QUEUE>
@@ -272,6 +273,7 @@
                             </build>
                             <run>
                                 <ports>
+                                    <port>5001:5001</port>
                                     <port>${worker.adminport}:8081</port>
                                 </ports>
                                 <env>
@@ -321,5 +323,4 @@
             </properties>
         </profile>
     </profiles>
-
 </project>
