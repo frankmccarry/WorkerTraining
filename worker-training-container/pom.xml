@@ -25,7 +25,7 @@
         </dependency>
         <dependency>
             <groupId>com.github.jobservice.workers.starter</groupId>
-            <artifactId>worker-starter</artifactId>
+            <artifactId>worker-training</artifactId>
         </dependency>
 
     </dependencies>
@@ -135,7 +135,7 @@
                             <goal>push</goal>
                         </goals>
                         <configuration>
-                            <filter>worker-starter</filter>
+                            <filter>worker-training</filter>
                         </configuration>
                     </execution>
                 </executions>
@@ -210,8 +210,8 @@
 
                         <!-- Run the Task Starter Worker image -->
                         <image>
-                            <alias>worker-starter</alias>
-                            <name>worker-starter:1.0.0-SNAPSHOT</name>
+                            <alias>worker-training</alias>
+                            <name>dev/cafapi/worker-starter:1.0.0-SNAPSHOT</name>
                             <build>
                                 <from>${dockerHubPublic}/cafapi/opensuse-jre11:3</from>
                                 <cmd>
