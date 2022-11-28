@@ -40,7 +40,7 @@
             </dependency>
             <dependency>
                 <groupId>com.github.jobservice.workers.starter</groupId>
-                <artifactId>worker-starter</artifactId>
+                <artifactId>worker-training</artifactId>
                 <version>1.0.0-SNAPSHOT</version>
             </dependency>
         </dependencies>
