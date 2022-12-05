@@ -211,7 +211,7 @@
                         <!-- Run the Task Starter Worker image -->
                         <image>
                             <alias>worker-training</alias>
-                            <name>dev/cafapi/worker-starter:1.0.0-SNAPSHOT</name>
+                            <name>${dockerCafImagePrefix}worker-starter${dockerProjectVersion}</name>
                             <build>
                                 <from>${dockerHubPublic}/cafapi/opensuse-jre11:3</from>
                                 <cmd>
