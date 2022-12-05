@@ -33,3 +33,25 @@ Starter message
 	}
 }
 ``` 
+
+## Stage 2 Message Handling
+Start a debugging session.  
+Use a JShell Console to encrypt and decrypt your message to go into taskData field
+```
+import java.util.Base64;
+public class Utility {
+    public final String decode(final String value) {
+        final byte[] decodedBytes = Base64.getDecoder().decode(value);
+        return new String(decodedBytes);
+    }
+    public final String encode(final String value) {
+        return Base64.getEncoder().encodeToString(value.getBytes());
+    }
+}
+
+Utility util = new Utility();
+util.encode("{\"message\":\"Show me the code\"}");
+util.decode("eyJtZXNzYWdlIjoiV2hhdCBQbGF5ZXIifQ==");
+```
+Pass in the base64 encrypted message {\"message\":\"Ready Player 1\"} to RabbitMQ worker
+queue and review the logging output to see how the message is handled.
