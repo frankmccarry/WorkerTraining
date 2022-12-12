@@ -56,4 +56,9 @@ util.decode("eyJtZXNzYWdlIjoiV2hhdCBQbGF5ZXIifQ==");
 Pass in the base64 encrypted message {\"message\":\"Ready Player 1\"} to RabbitMQ worker
 queue and review the logging output to see how the message is handled.
 
+## Stage 3 Error Handling
+Start a debugging session.  
 
+As detailed in [Error Handling](https://workerframework.github.io/worker-framework/pages/en-us/Error-Handling) there are several situations where
+an error can happen. To mimic a poision message post this onto the RabbitMQ input queue for this worker.
+![img.png](img.png)
