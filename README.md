@@ -55,3 +55,5 @@ util.decode("eyJtZXNzYWdlIjoiV2hhdCBQbGF5ZXIifQ==");
 ```
 Pass in the base64 encrypted message {\"message\":\"Ready Player 1\"} to RabbitMQ worker
 queue and review the logging output to see how the message is handled.
+
+
